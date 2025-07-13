@@ -1,0 +1,78 @@
+@import url(memory.css);
+@import url(normalize.css);
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('./fondo.webp'); 
+    background-size: cover;
+    color: rgb(48, 230, 200);
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(255, 163, 34, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url('./menu-background.jpg'); /* Image de fond pour la barre de menu */
+    background-size: cover;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.game-container {
+    margin: 20px auto;
+    display: flex; /* Utilisation de flex pour l'alignement horizontal */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les cartes */
+    gap: 10px; /* Espacement entre les cartes */
+}
+
+.carta {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    background-color: #007BFF; /* Couleur de la carte cachée */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carta.oculta {
+    background-color: slateblue;
+    color: transparent;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(245, 89, 159, 0.9), rgba(245, 89, 159, 0.3));
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.icon {
+    width: 30px; /* Ajuste du taille de l'icône */
+    height: 30px; /* Ajuste du taille de l'icône */
+    vertical-align: middle;
+}
